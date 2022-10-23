@@ -1,0 +1,12 @@
+uses crt;
+var
+    n,t:string;
+begin
+    clrscr;
+    write('Masukkan Nama    : ');readln(n);
+    write('Masukkan Waktu   : ');readln(t);
+
+    writeln('S');writeln('E');writeln('L');writeln('A');writeln('M');writeln('A');writeln('T');
+    writeln(t);
+    writeln(n);
+end.

@@ -1,0 +1,48 @@
+uses crt;
+var 
+    x,y:integer;
+begin
+    clrscr;
+    write('Masukkan titik x     : ');readln(x);
+    write('Masukkan titik y     : ');readln(y);
+
+    if (x > 0) and (y > 0) then
+        begin
+            writeln('Titik anda berada di kuadran 1');
+        end
+    else if (x < 0) and (y > 0) then
+        begin
+            writeln('Titik anda berada di kuadran 2');
+        end
+    else if (x < 0) and (y < 0) then
+        begin
+            writeln('Titik anda berada di kuadran 3');
+        end
+    else if (x > 0) and (y < 0) then
+        begin
+            writeln('Titik anda berada di kuadran 4');
+        end
+    else if (x = 0) and (y < 0) then
+        begin
+            writeln('Titik anda berada di sumbu y negatif');
+        end
+    else if (x = 0) and (y > 0) then
+        begin
+            writeln('Titik anda berada di sumbu y positif');
+        end
+    else if (x < 0) and (y = 0) then
+        begin
+            writeln('Titik anda berada di sumbu x negatif');
+        end
+     else if (x > 0) and (y = 0) then
+        begin
+            writeln('Titik anda berada di sumbu x positif');
+        end
+     else if (x = 0) and (y = 0) then
+        begin
+            writeln('Titik anda berada di titik nol (origin)');
+        end
+    else 
+        writeln('Input dengan benar !! ');
+    end.
+end.

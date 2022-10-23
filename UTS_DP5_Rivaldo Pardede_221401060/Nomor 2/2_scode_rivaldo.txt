@@ -1,0 +1,17 @@
+uses crt;
+var 
+    n1,n2,n:string;
+    c,r,f,k:real;
+begin
+    clrscr;
+    write('Masukkan Nama Awal       : ');readln(n1);
+    write('Masukkan Nama Akhir      : ');readln(n2);
+    write('Masukkan suhu hari ini dalam celcius: ');readln(c);
+
+    n:=n1 + ' ' + n2;
+    r:= (4/5)*c;
+    f:= (9/5)*c + 32;
+    k:= c + 273;
+
+    writeln('Halo ',n,', hari ini bersuhu ',r:0:2,' reamur/ ',k:0:2,' Kelvin/ ',f:0:2,' Farenheit.' );
+end.

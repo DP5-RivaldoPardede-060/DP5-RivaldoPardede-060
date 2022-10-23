@@ -1,0 +1,16 @@
+uses crt;
+var 
+    i,n:integer;
+begin
+    clrscr;
+    write('Input nilai: ');readln(n);
+
+    i:= 1;
+
+    while i <= n do
+        begin
+            write(i,' ');
+            i:= i + 1;
+        end;
+
+end.
